@@ -1,0 +1,30 @@
+package march27;
+
+public class Ex12 
+{
+	public static void main(String ah[])
+	{
+		int i;
+		java.util.Scanner sc=new java.util.Scanner(System.in);
+		System.out.println("enter number");
+		int num=sc.nextInt();
+		System.out.println("the 10 integers are:");
+		for(i=2;i<=num;i++)
+		{
+			System.out.print(i+" ");
+		}
+		int small=i;
+		for(i=2;i<=num;i++)
+		{
+			if(small>=i)
+			{
+				small=i;
+				
+			}
+			
+		}
+		System.out.println();
+		System.out.println(" the smallest number in the above " + num + " integers are "+small);
+
+	}
+}
